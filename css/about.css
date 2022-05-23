@@ -1,0 +1,119 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: radial-gradient(circle at center, #899dc4, #495d84);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
+    font-weight: 300;
+  }
+  
+  .all {
+    display: flex;
+    perspective: 10px;
+    transform: perspective(300px) rotateX(20deg);
+    will-change: perspective;
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3d;
+  
+  }
+  .all:hover {
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotateX(0deg);
+  }
+  .all:hover .text {
+    opacity: 1;
+  }
+  .all:hover > div {
+    opacity: 1;
+    transition-delay: 0s;
+  }
+  .all:hover .explainer {
+    opacity: 0;
+  }
+  .left, .center, .right {
+    width: 400px;
+    height: 300px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(224, 218, 40, 0.285);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(121, 221, 85, 0.491);
+    cursor: pointer;
+    background-blend-mode: color-burn;
+  }
+  .left:hover, .center:hover, .right:hover {
+    box-shadow: 0 0 30px 10px rgba(250, 255, 100, 0.457);
+    background-color: #ccf;
+  }
+  .text {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    bottom: 0;
+    left: 5px;
+    position: absolute;
+    will-change: transform;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 206, 100, 0.511);
+  }
+  
+  .left {
+    transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+    background-image: url(https://media-exp1.licdn.com/dms/image/C4E03AQEb1J3WrYknEg/profile-displayphoto-shrink_800_800/0/1649099412530?e=1658361600&v=beta&t=Q1OdrX4CwIG4ADBlvr_j-kCycLu6RkTmPC8u3GtjWag);
+  }
+  .center {
+    opacity: 1;
+    background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQF3fwewszShhQ/profile-displayphoto-shrink_800_800/0/1650086705831?e=1658361600&v=beta&t=8ele9mwXyZzN9DvHgO6g8tdEHHSxckF8oxIyq5002Vs);
+  }
+  .right {
+    transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+    background-image: url(https://media-exp1.licdn.com/dms/image/C5603AQFPCXjBn4Yg7w/profile-displayphoto-shrink_800_800/0/1649097297112?e=1658361600&v=beta&t=TQyVQyaeih-ThvtUP7FxefzqyFm0lUnSqWHbHwFVtJI);
+  }
+  
+  .explainer {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #303050;
+    background-image: radial-gradient(circle at center top, #cce, rgba(97, 170, 51, 0.532));
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ref {
+    background-color: #000;
+    background-image: linear-gradient(to bottom, #d80, #c00);
+    border-radius: 3px;
+    padding: 7px 10px;
+    position: absolute;
+    font-size: 16px;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .4);
+  }
+  .ref::first-letter {
+    font-size: 12px;
+  }
+  
