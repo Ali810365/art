@@ -133,6 +133,9 @@ body {
     font-weight: bold;
 
   }
+button:hover{
+  transform: scale(1.1); 
+}
 
   .text>a {
     color:white;
