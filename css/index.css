@@ -148,6 +148,20 @@ nav a:hover {
   text-justify:inter-word;
   font-size:18px;
 }
+.content li {
+  color:#355e3b;
+  line-height:1.5;
+  text-align:justify;
+  text-justify:inter-word;
+  font-size:18px;
+}
+.content ul {
+  color:#355e3b;
+  line-height:1.5;
+  text-align:justify;
+  text-justify:inter-word;
+  font-size:18px;
+}
 /*clock*/
 
 
