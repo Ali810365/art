@@ -116,6 +116,38 @@ body {
   .ref::first-letter {
     font-size: 12px;
   }
+<<<<<<< HEAD
 
   
   
+=======
+  
+  .button {
+    background-color: rgba(35, 174, 53, 0.48);
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  
+  }
+
+ button>a {
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+
+  }
+button:hover{
+  transform: scale(1.1); 
+}
+
+  .text>a {
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+
+  }
+  
+  
+>>>>>>> d217855d09366ef722942275bd667d76be608672
