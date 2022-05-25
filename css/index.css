@@ -11,7 +11,9 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
-
+.fa fa-github{
+  color:white;
+}
 .container {
   background-color: #fafafa;
   transform-origin: top left;
